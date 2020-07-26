@@ -1,0 +1,31 @@
+{
+    "extends": ["airbnb-typescript/base"],
+    "env": { "node": true },
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".d.ts",
+                    ".ts"
+                ]
+            }
+        }
+    },
+    "rules": {
+        "semi": "error",
+        "class-methods-use-this": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "d.ts": "never",
+                "ts": "never"
+            }
+        ]
+    }
+}
